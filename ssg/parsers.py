@@ -9,7 +9,7 @@ class Parser:
         return extension in self.extensions
 
     def parse(self, path: Path, source: Path, dest: Path):
-        raise NotImplementedError("Subclasses should implement this!")
+        raise NotImplementedError
 
     def read(self, path: Path):
         with open(path, 'r') as fp:
